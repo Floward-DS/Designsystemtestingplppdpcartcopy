@@ -1,0 +1,185 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "color": {
+    "background": {
+      "$type": "color",
+      "$value": "rgba(247, 246, 242, 1.00)",
+      "$description": "The default background color for the application."
+    },
+    "foreground": {
+      "$type": "color",
+      "$value": "rgba(7, 78, 89, 1.00)",
+      "$description": "The default color for elements or text that appears on top of the background."
+    },
+    "card": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 1.00)",
+        "$description": "The background color for cards, modals, and other containers."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)",
+        "$description": "The default color for text or elements that appear on top of cards."
+      }
+    },
+    "popover": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 1.00)",
+        "$description": "The background color for dropdowns and tooltips."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)",
+        "$description": "The default color for text or elements that appear on top of dropdowns."
+      }
+    },
+    "primary": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)",
+        "$description": "The primary color used for buttons, links, and other interactive elements."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 1.00)",
+        "$description": "The default color for text or elements that appear on top of primary colored elements."
+      }
+    },
+    "secondary": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(236, 235, 230, 1.00)",
+        "$description": "The secondary color used for secondary buttons and interactive elements."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)",
+        "$description": "The default color for text or elements that appear on top of secondary colored elements."
+      }
+    },
+    "muted": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(222, 221, 217, 1.00)",
+        "$description": "The muted color used for less prominent elements."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)",
+        "$description": "The default color for text or elements that appear on top of muted colored elements."
+      }
+    },
+    "accent": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(238, 250, 254, 1.00)",
+        "$description": "The accent color used for highlights and interactive elements."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)",
+        "$description": "The default color for text or elements that appear on top of accent colored elements."
+      }
+    },
+    "destructive": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(255, 4, 0, 1.00)",
+        "$description": "The color used for destructive actions like delete buttons."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 1.00)",
+        "$description": "The default color for text on destructive colored elements."
+      }
+    },
+    "success": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(16, 185, 129, 1.00)",
+        "$description": "The color used for success states and messages."
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 1.00)",
+        "$description": "The default color for text on success colored elements."
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "rgba(239, 238, 235, 1.00)",
+      "$description": "The default border color for elements."
+    },
+    "input": {
+      "DEFAULT": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0)",
+        "$description": "The background color for input fields once text has been filled."
+      },
+      "background": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 1.00)",
+        "$description": "The default background color for input fields."
+      }
+    },
+    "ring": {
+      "$type": "color",
+      "$value": "rgba(7, 78, 89, 1.00)",
+      "$description": "The color for focus rings and focus indicators."
+    },
+    "chart": {
+      "1": {
+        "$type": "color",
+        "$value": "rgba(7, 78, 89, 1.00)"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "rgba(139, 170, 173, 1.00)"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "rgba(238, 250, 254, 1.00)"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "rgba(0, 49, 60, 1.00)"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "rgba(236, 235, 230, 1.00)"
+      }
+    },
+    "dark": {
+      "background": {
+        "$type": "color",
+        "$value": "rgba(0, 49, 60, 1.00)"
+      },
+      "foreground": {
+        "$type": "color",
+        "$value": "rgba(247, 246, 242, 1.00)"
+      },
+      "card": {
+        "DEFAULT": {
+          "$type": "color",
+          "$value": "rgba(7, 78, 89, 1.00)"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "rgba(247, 246, 242, 1.00)"
+        }
+      },
+      "primary": {
+        "DEFAULT": {
+          "$type": "color",
+          "$value": "rgba(139, 170, 173, 1.00)"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "rgba(0, 49, 60, 1.00)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+/* 
+  Custom fonts loaded from GitHub repository
+  Using raw.githubusercontent.com to directly access font files
+*/
+
+/* Founders Grotesk - Sans-serif font family */
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/FoundersGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/FoundersGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/FoundersGrotesk-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/FoundersGrotesk-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Montas - Serif font family */
+@font-face {
+  font-family: 'Montas';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/Montas-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montas';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/Montas-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montas';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/Montas-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montas';
+  src: url('https://raw.githubusercontent.com/tahirfaizi-hash/Floward-Fonts/main/Montas-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

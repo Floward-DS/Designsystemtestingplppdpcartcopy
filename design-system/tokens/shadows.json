@@ -1,0 +1,59 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "sm": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "4px",
+        "spread": "0px",
+        "color": "rgba(108, 108, 108, 0.15)"
+      },
+      "$description": "Shadow for small elevations like cards"
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "6px",
+        "blur": "12px",
+        "spread": "0px",
+        "color": "rgba(108, 108, 108, 0.15)"
+      },
+      "$description": "Shadow for medium elevations like modals"
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "24px",
+        "spread": "0px",
+        "color": "rgba(108, 108, 108, 0.2)"
+      },
+      "$description": "Shadow for large elevations like dialogs"
+    },
+    "xl": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "20px",
+        "blur": "40px",
+        "spread": "0px",
+        "color": "rgba(108, 108, 108, 0.25)"
+      },
+      "$description": "Shadow for prominent elevations"
+    }
+  }
+}

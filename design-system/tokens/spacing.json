@@ -1,0 +1,138 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "spacing": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Extra small spacing unit"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Small spacing unit"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Medium spacing unit"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Base spacing unit"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": "Large spacing unit"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Extra large spacing unit"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "2XL spacing unit"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "3XL spacing unit"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "4XL spacing unit"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "5XL spacing unit"
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "6XL spacing unit"
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$description": "7XL spacing unit"
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "128px",
+      "$description": "8XL spacing unit"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Small border radius"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "10px",
+      "$description": "Medium border radius"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Default border radius"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Large border radius"
+    },
+    "button": {
+      "$type": "dimension",
+      "$value": "54px",
+      "$description": "Border radius for button elements"
+    },
+    "card": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Border radius for card elements"
+    },
+    "toggle": {
+      "$type": "dimension",
+      "$value": "100px",
+      "$description": "Border radius for toggle and pill-shaped elements"
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "9999px",
+      "$description": "Full rounded corners"
+    }
+  },
+  "borderWidth": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "thin": {
+      "$type": "dimension",
+      "$value": "1px"
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "2px"
+    },
+    "thick": {
+      "$type": "dimension",
+      "$value": "3px"
+    }
+  }
+}
