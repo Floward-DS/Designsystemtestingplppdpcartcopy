@@ -139,6 +139,11 @@ export function HomePage({ onNavigateToProducts }: HomePageProps) {
           </div>
         </div>
 
+        {/* Red Banner */}
+        <div className="mx-5 mt-4 bg-red-600 text-white text-center py-3 rounded-lg">
+          this is different
+        </div>
+
         {/* Discover Something New */}
         <section className="px-5 mt-8">
           <h3
