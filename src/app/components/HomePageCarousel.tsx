@@ -30,6 +30,7 @@ export function HomePageCarousel({
   const [currentSlide, setCurrentSlide] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Default slides if none provided
   const defaultSlides: HeroSlide[] = slides.length > 0 ? slides : [
@@ -91,6 +92,15 @@ export function HomePageCarousel({
     setTouchEnd(0);
   };
 
+  // Handle slide change with transition
+  const handleSlideChange = (index: number) => {
+    if (index !== currentSlide && !isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentSlide(index);
+      setTimeout(() => setIsTransitioning(false), 600);
+    }
+  };
+
   return (
     <div 
       className="relative w-full h-[480px] overflow-hidden" 
@@ -98,50 +108,65 @@ export function HomePageCarousel({
       onTouchMove={handleTouchMove} 
       onTouchEnd={handleTouchEnd}
     >
-      {/* Hero Image */}
-      <div className="absolute inset-0">
-        <img 
-          src={defaultSlides[currentSlide].image} 
-          alt={defaultSlides[currentSlide].title}
-          className="w-full h-full object-cover"
-        />
-        
-        {/* Bottom Gradient Overlay */}
-        <div 
-          className="absolute bottom-0 left-0 right-0 h-[212px]"
-          style={{
-            background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%)'
-          }}
-        />
-      </div>
+      {/* Slides Container with smooth transition */}
+      <div 
+        className="flex h-full transition-transform duration-600 ease-out"
+        style={{
+          transform: `translateX(-${currentSlide * 100}%)`,
+          transitionDuration: '600ms'
+        }}
+      >
+        {defaultSlides.map((slide, index) => (
+          <div key={slide.id} className="relative w-full h-full flex-shrink-0">
+            {/* Hero Image */}
+            <img 
+              src={slide.image} 
+              alt={slide.title}
+              className="w-full h-full object-cover"
+            />
+            
+            {/* Bottom Gradient Overlay */}
+            <div 
+              className="absolute bottom-0 left-0 right-0 h-[212px]"
+              style={{
+                background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%)'
+              }}
+            />
 
-      {/* Content at Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 px-5 pb-[49px]">
-        <h2 
-          className="text-white mb-6"
-          style={{
-            fontFamily: 'var(--font-montas)',
-            fontSize: '40px',
-            lineHeight: '48px',
-          }}
-        >
-          {defaultSlides[currentSlide].title}
-        </h2>
-        <button 
-          onClick={defaultSlides[currentSlide].ctaAction}
-          className="px-6 py-3 bg-white rounded-[50px] shadow-[0px_4px_4px_0px_rgba(108,108,108,0.15)]"
-        >
-          <span 
-            className="text-[#074e59] capitalize"
-            style={{
-              fontFamily: 'var(--font-founders)',
-              fontSize: '16px',
-              fontWeight: 'var(--font-weight-medium)',
-            }}
-          >
-            {defaultSlides[currentSlide].ctaText}
-          </span>
-        </button>
+            {/* Content at Bottom */}
+            <div className="absolute bottom-0 left-0 right-0 px-5 pb-[49px]">
+              <h2 
+                className="text-white mb-6 transition-opacity duration-500"
+                style={{
+                  fontFamily: 'var(--font-montas)',
+                  fontSize: '40px',
+                  lineHeight: '48px',
+                  opacity: index === currentSlide ? 1 : 0.3
+                }}
+              >
+                {slide.title}
+              </h2>
+              <button 
+                onClick={slide.ctaAction}
+                className="px-6 py-3 bg-white rounded-[50px] shadow-[0px_4px_4px_0px_rgba(108,108,108,0.15)] transition-opacity duration-500"
+                style={{
+                  opacity: index === currentSlide ? 1 : 0.3
+                }}
+              >
+                <span 
+                  className="text-[#074e59] capitalize"
+                  style={{
+                    fontFamily: 'var(--font-founders)',
+                    fontSize: '16px',
+                    fontWeight: 'var(--font-weight-medium)',
+                  }}
+                >
+                  {slide.ctaText}
+                </span>
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Carousel Indicators */}
@@ -150,8 +175,9 @@ export function HomePageCarousel({
           {defaultSlides.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentSlide(index)}
+              onClick={() => handleSlideChange(index)}
               aria-label={`Go to slide ${index + 1}`}
+              disabled={isTransitioning}
               className={`transition-all duration-300 ease-in-out rounded-full ${
                 index === currentSlide 
                   ? 'w-6 h-1 bg-white' 
