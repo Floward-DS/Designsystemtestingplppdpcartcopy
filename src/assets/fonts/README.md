@@ -4,23 +4,25 @@ This directory contains the custom font files for the Floward design system.
 
 ## Font Families
 
-### Founders Grotesk (Sans-serif)
-- `FoundersGrotesk-Light.otf` - Font weight: 300
-- `FoundersGrotesk-Regular.otf` - Font weight: 400
-- `FoundersGrotesk-Medium.otf` - Font weight: 500
-- `FoundersGrotesk-Semibold.otf` - Font weight: 600
+### Founders Grotesk (Sans-serif) - All .otf format
+- `TestFoundersGrotesk-Light.otf` - Font weight: 300 (Light)
+- `TestFoundersGrotesk-LightItalic.otf` - Font weight: 300 (Light Italic)
+- `TestFoundersGrotesk-Regular.otf` - Font weight: 400 (Regular)
+- `TestFoundersGrotesk-RegularItalic.otf` - Font weight: 400 (Regular Italic)
+- `TestFoundersGrotesk-Medium.otf` - Font weight: 500 (Medium)
+- `TestFoundersGrotesk-MediumItalic.otf` - Font weight: 500 (Medium Italic)
+- `TestFoundersGrotesk-Semibold.otf` - Font weight: 600 (Semibold)
+- `TestFoundersGrotesk-SemiboldItalic.otf` - Font weight: 600 (Semibold Italic)
+- `TestFoundersGrotesk-Bold.otf` - Font weight: 700 (Bold)
+- `TestFoundersGrotesk-BoldItalic.otf` - Font weight: 700 (Bold Italic)
 
-### Montas (Serif)
-- `Montas-Light.woff` - Font weight: 300
-- `Montas-Regular.woff` - Font weight: 400
-- `Montas-Medium.woff` - Font weight: 500
-- `Montas-Semibold.woff` - Font weight: 600
+### Montas (Serif) - Mixed formats
+- `Montas-Light.ttf` - Font weight: 300 (Light)
+- `Montas-Regular.otf` - Font weight: 400 (Regular)
 
-## Upload Instructions
+## Status
 
-1. Upload the font files listed above to this directory
-2. Ensure the file names match exactly as listed
-3. The fonts.css file is already configured to use these local paths
+✅ All font files have been uploaded and are configured in `/src/styles/fonts.css`
 
 ## Usage
 
