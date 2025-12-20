@@ -1,12 +1,13 @@
 /* 
-  Custom fonts loaded from local repository
-  Font files located in: /src/assets/fonts/
+  Custom fonts loaded directly from GitHub repository
+  Repository: Floward-DS/Designsystemtestingplppdpcartcopy
+  Font files located in: src/assets/fonts/
 */
 
 /* Founders Grotesk - Sans-serif font family */
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-Light.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -14,7 +15,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-LightItalic.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-LightItalic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -22,7 +23,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-Regular.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -30,7 +31,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-RegularItalic.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-RegularItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -38,7 +39,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-Medium.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -46,7 +47,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-MediumItalic.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-MediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -54,7 +55,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-Semibold.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-Semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -62,7 +63,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-SemiboldItalic.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-SemiboldItalic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -70,7 +71,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-Bold.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -78,7 +79,7 @@
 
 @font-face {
   font-family: 'Founders Grotesk';
-  src: url('../assets/fonts/TestFoundersGrotesk-BoldItalic.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/TestFoundersGrotesk-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -87,7 +88,7 @@
 /* Montas - Serif font family */
 @font-face {
   font-family: 'Montas';
-  src: url('../assets/fonts/Montas-Light.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/Montas-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -95,7 +96,7 @@
 
 @font-face {
   font-family: 'Montas';
-  src: url('../assets/fonts/Montas-Regular.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/Floward-DS/Designsystemtestingplppdpcartcopy/main/src/assets/fonts/Montas-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
