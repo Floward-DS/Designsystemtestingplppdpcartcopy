@@ -6,13 +6,14 @@ import { HomeEleganceCards } from './HomeEleganceCards';
 import { HomeMoments } from './HomeMoments';
 import { HomeFourProd } from './HomeFourProd';
 import { HomeProdCats } from './HomeProdCats';
+import { OrderTracking } from './OrderTracking';
 import { useState, useEffect, useRef } from 'react';
 
 /**
  * HomeScreen - Master Template Component
  * 
  * A complete mobile e-commerce home screen template for Floward.
- * Features scroll detection, animated header, hero carousel, and multiple content sections.
+ * Features scroll detection, animated header, hero carousel, order tracking widget, and multiple content sections.
  * 
  * @example
  * ```tsx
@@ -100,6 +101,9 @@ export function HomeScreen({ onNavigateToProducts, activeTab = 'home', onTabChan
 
       {/* Bottom Navigation */}
       <BottomNav activeTab={activeTab} onTabChange={onTabChange} />
+      
+      {/* Order Tracking Widget */}
+      <OrderTracking />
     </div>
   );
 }
